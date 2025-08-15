@@ -6,6 +6,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y ffmpeg curl && \
     apt-get clean && \
+    pip install requests && \
     rm -rf /var/lib/apt/lists/*
 
 USER $NB_UID
