@@ -10,4 +10,4 @@ RUN apt-get update && \
 
 USER $NB_UID
 
-CMD ["start.sh", "jupyter", "lab", "--LabApp.token=", "--LabApp.password="]
+CMD ["start.sh", "jupyter", "lab", "--LabApp.token=''", "--LabApp.password=''"]
